@@ -16,13 +16,13 @@ watch = pg.time.Clock()
 gravity = 0.35
 movement = 0
 
-bg_img = pg.image.load('images/bg.jpg')              
+bg_img = pg.image.load('images/bg1.jpg')              
 
-floor = pg.image.load("images/base.png")
+floor = pg.image.load("images/base1.png")
 floor = pg.transform.scale2x(floor)
 floor_x_pos = 0
 
-not_a_trump = pg.image.load('images/impost3.png')
+not_a_trump = pg.image.load('images/UFO.png')
 not_a_trump = pg.transform.scale2x(not_a_trump)
 not_a_trump_rect = not_a_trump.get_rect(center = (100,325))
 
@@ -36,7 +36,7 @@ while True:
                 movement = 0
                 movement -= 10 
 
-    window.blit(bg_img, (0,0))
+    window.blit(bg_img, (0,-240))
     window.blit(not_a_trump, (not_a_trump_rect))
     create_floor()
     movement += gravity
