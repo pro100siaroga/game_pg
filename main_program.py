@@ -16,7 +16,7 @@ watch = pg.time.Clock()
 gravity = 0.35
 movement = 0
 
-bg_img = pg.image.load('images/bg.jpg')
+bg_img = pg.image.load('images/bg.jpg')              
 
 floor = pg.image.load("images/base.png")
 floor = pg.transform.scale2x(floor)
@@ -33,7 +33,7 @@ while True:
         if event.type == pg.KEYDOWN:
             if event.key == pg.K_SPACE:
                 movement = 0
-                movement -= 14 
+                movement -= 10 
 
     window.blit(bg_img, (0,0))
     window.blit(not_a_trump, (not_a_trump_rect))
