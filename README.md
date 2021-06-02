@@ -1,2 +1,1 @@
-# game_pg
-Gra w pygame lista 7
+# PYTHON GAME USING PYGAME
