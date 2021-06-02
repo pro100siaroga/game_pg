@@ -22,7 +22,8 @@ floor = pg.image.load("images/base.png")
 floor = pg.transform.scale2x(floor)
 floor_x_pos = 0
 
-not_a_trump = pg.image.load('images/impost1.png')
+not_a_trump = pg.image.load('images/impost3.png')
+not_a_trump = pg.transform.scale2x(not_a_trump)
 not_a_trump_rect = not_a_trump.get_rect(center = (100,325))
 
 while True:
